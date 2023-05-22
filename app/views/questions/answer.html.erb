@@ -1,0 +1,14 @@
+<%# display the question you ask your coach as well as his answer.  %>
+<div class="d-flex flex-column justify-content-center align-items-center">
+  <h4>Hello There</h4>
+  <br>
+
+    <p> <%= @question %></p>
+    <p >- <i>You</i></p>
+
+  <br>
+
+    <p><%= @answer %></p>
+    <p>- <i>Your Coach</i></p>
+
+  <%= link_to "Ask a new question", ask_path, style: "text-decoration: none " , class: "btn btn-secondary"%>
